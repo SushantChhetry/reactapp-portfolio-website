@@ -4,6 +4,8 @@ import EmailIcon from "@mui/icons-material/Email";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import emailjs from "emailjs-com";
 
+import Button from "@mui/material/Button";
+
 const Contact = () => {
   const form = useRef();
 
@@ -67,8 +69,8 @@ const Contact = () => {
               placeholder="Your Message Here"
               required
             />
-            <button type="submit" className="btn btn-primary">
-              Send Message
+            <button type="submit">
+              <Button variant="container">Send Message</Button>
             </button>
           </form>
         </div>

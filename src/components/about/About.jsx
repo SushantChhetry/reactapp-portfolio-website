@@ -4,6 +4,8 @@ import ME from "../../asset/ME.JPG";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import GroupIcon from "@mui/icons-material/Group";
 
+import Button from "@mui/material/Button";
+
 const About = () => {
   return (
     <section id="about">
@@ -52,8 +54,8 @@ const About = () => {
             —Stephen Hawking”
           </p>
 
-          <a href="#contact" className="btn btn-primary">
-            Lets Talk
+          <a href="#contact">
+            <Button variant="contained">Lets Talk</Button>
           </a>
         </div>
       </div>
