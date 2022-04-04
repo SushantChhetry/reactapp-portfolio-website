@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.css";
 import ME from "../../asset/ME.JPG";
+import IMG2 from "../../asset/IMG2.jpg";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import GroupIcon from "@mui/icons-material/Group";
 
@@ -15,7 +16,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="about-img" />
+            <img src={IMG2} alt="about-img" />
           </div>
         </div>
 
@@ -49,11 +50,12 @@ const About = () => {
             experience with programming languages such as Javascript, Java, and
             Python and am familiar with tools and frameworks like Docker, AWS,
             Git, and React.js. When I am not programming, you can find me
-            exploring new places and trying out new cuisines. “However difficult
-            life may seem, there is always something you can do and succeed at.
-            —Stephen Hawking”
+            exploring new places and trying out new cuisines.
+            <quote>
+              “However difficult life may seem, there is always something you
+              can do and succeed at. —Stephen Hawking”
+            </quote>
           </p>
-
           <a href="#contact">
             <Button variant="contained">Lets Talk</Button>
           </a>

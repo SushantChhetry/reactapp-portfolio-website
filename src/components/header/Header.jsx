@@ -22,10 +22,16 @@ const Header = () => {
         <h5 className="text-light">Fullstack Developer</h5>
         <div className="buttons">
           <Stack spacing={3} direction="row">
-            <Button variant="text" onClick={resumeDownload} className="btn">
+            <Button
+              variant="contained"
+              onClick={resumeDownload}
+              className="btn"
+            >
               Download Resume
             </Button>
-            <Button variant="contained">Let's Talk</Button>
+            <a href="#contact">
+              <Button variant="contained">Let's Talk</Button>
+            </a>
           </Stack>
         </div>
         <HeaderSocial className="header__socials" />

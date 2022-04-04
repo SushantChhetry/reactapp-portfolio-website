@@ -47,33 +47,27 @@ const Contact = () => {
               Send message
             </a>
           </article>
-
-          {/*END OF CONTACT OPTION*/}
-
-          <form ref={form} onSubmit={sendEmail}>
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Full Name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-            <textarea
-              name="message"
-              rows="7"
-              placeholder="Your Message Here"
-              required
-            />
-            <button type="submit">
-              <Button variant="container">Send Message</Button>
-            </button>
-          </form>
         </div>
+        {/*END OF CONTACT OPTION*/}
+
+        <form ref={form} onSubmit={sendEmail}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Full Name"
+            required
+          />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="7"
+            placeholder="Your Message Here"
+            required
+          />
+          <Button type="submit" variant="contained">
+            Send Message
+          </Button>
+        </form>
       </div>
     </section>
   );

@@ -1,45 +1,26 @@
-import React from 'react';
-import './portfolio.css';
+import React from "react";
+import "./portfolio.css";
 
-import ME from "../../asset/ME.JPG";
+import Button from "@mui/material/Button";
+
+import Nutrition from "../../asset/Nutrition.JPG";
+
+import Sort from "../../asset/Sort.JPG";
 
 const data = [
   {
     id: 1,
-    image: ME,
-    title: "Project title",
-    github: "https://github.com",
+    image: Nutrition,
+    title: "Nutrition App",
+    github: "https://github.com/SushantChhetry/NutritionApp.github.io",
   },
   {
     id: 2,
-    image: ME,
-    title: "Project title",
-    github: "https://github.com",
+    image: Sort,
+    title: "Array Sorter",
+    github: "https://github.com/SushantChhetry/sorting-algorithm-react-app",
   },
-  {
-    id: 3,
-    image: ME,
-    title: "Project title",
-    github: "https://github.com",
-  },
-  {
-    id: 4,
-    image: ME,
-    title: "Project title",
-    github: "https://github.com",
-  },
-  {
-    id: 5,
-    image: ME,
-    title: "Project title",
-    github: "https://github.com",
-  },
-  {
-    id: 6,
-    image: ME,
-    title: "Project title",
-    github: "https://github.com",
-  },
+
 ];
 
 const Portfolio = () => {
@@ -49,22 +30,22 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {
-          data.map(({id, image, title, github}) => {
-            return (
-              <article key={id} className="portfolio__item">
-                <div className="portfolio__item-image">Place image here</div>
-                <h3>This is a portfolio item titke (use img and title here)</h3>
-                <a href={github} className="btn">
-                  Github
-                </a>
-              </article>
-            );
-          })
-        }
+        {data.map(({ id, image, title, github }) => {
+          return (
+            <article key={id} className="portfolio__item">
+              <div className="portfolio__item-image">
+                <img src={image} />
+              </div>
+              <h3>{title}</h3>
+              <a href={github}>
+                <Button variant="contained">Github</Button>
+              </a>
+            </article>
+          );
+        })}
       </div>
     </section>
   );
-}
+};
 
-export default Portfolio
+export default Portfolio;
